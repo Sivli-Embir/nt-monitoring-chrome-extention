@@ -1,6 +1,6 @@
 # nt-monitoring-chrome-extention
 ## How to install
-* Download as zip and unzip
+* Download as zip and unzip (Green button up top, 'Clone or download')
 * Open [Chrome extensions](chrome://extensions/) for your browser, copy/paste: `chrome://extensions/`
 * Enable Developer Mode (upper far right)
 * Press Load unpacked and find the unzipped folder.

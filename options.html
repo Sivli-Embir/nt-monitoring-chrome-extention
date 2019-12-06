@@ -11,7 +11,7 @@
 <textarea id='orange' name="orange" rows="8" cols="80"></textarea>
 <h3>O (Green) words</h3>
 <textarea id='green' name="green" rows="8" cols="80"></textarea>
-<div>Checks per second: <input id='seconds' type="number" name="seconds"></div>
+<div>Seconds per check: <input id='seconds' type="number" name="seconds"></div>
 <div id="status"></div>
 <button id="save">Save</button>
 
@@ -24,9 +24,9 @@
 </p>
 <p>
   Warning: Currently nT Monitoring is not emitting any (known) events or hooks.
-  As such we have to use a timer (see checks per second).
-  If you are getting bad performace you can decrese the checks per second (increase the number).
-  You can also increase it to less then a second (e.g. 0.5), this is not
+  As such we have to use a timer (see Seconds per check).
+  If you are getting bad performace you can increase the seconds per check.
+  You can also decrease it to less then a second (e.g. 0.5), this is not
   recommended or really needed.
 </p>
 

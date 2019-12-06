@@ -24,5 +24,15 @@ function restore_options() {
   });
 }
 
+function reset_options() {
+  document.getElementById('red').value = defaultOptions.red.join('\n');
+  document.getElementById('pink').value = defaultOptions.pink.join('\n');
+  document.getElementById('orange').value = defaultOptions.orange.join('\n');
+  document.getElementById('green').value = defaultOptions.green.join('\n');
+  document.getElementById('seconds').value = +defaultOptions.seconds;
+  save_options()
+}
+
 document.addEventListener('DOMContentLoaded', restore_options);
 document.getElementById('save').addEventListener('click', save_options);
+document.getElementById('restore').addEventListener('click', reset_options);

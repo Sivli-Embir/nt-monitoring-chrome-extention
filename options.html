@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head><title>newTumbl Monitoring Settings</title></head>
+<body>
+
+<h3>WOW (Red) words</h3>
+<textarea id='red' name="red" rows="8" cols="80"></textarea>
+<h3>X (Pink) words</h3>
+<textarea id='pink' name="pink" rows="8" cols="80"></textarea>
+<h3>M (Orange) words</h3>
+<textarea id='orange' name="orange" rows="8" cols="80"></textarea>
+<h3>O (Green) words</h3>
+<textarea id='green' name="green" rows="8" cols="80"></textarea>
+<div>Checks per second: <input id='seconds' type="number" name="seconds"></div>
+<div id="status"></div>
+<button id="save">Save</button>
+
+<p>
+  The above words are regex based searches. Each new line will be a separate search.
+  <ul>
+    <li>Post text will use /^word/i (case insesitive)</li>
+    <li>Tags will use /^#word/i (hashed case insesitive)</li>
+  </ul>
+</p>
+<p>
+  Warning: Currently nT Monitoring is not emitting any (known) events or hooks.
+  As such we have to use a timer (see checks per second).
+  If you are getting bad performace you can decrese the checks per second (increase the number).
+  You can also increase it to less then a second (e.g. 0.5), this is not
+  recommended or really needed.
+</p>
+
+<script src="defaults.js"></script>
+<script src="options.js"></script>
+</body>
+</html>

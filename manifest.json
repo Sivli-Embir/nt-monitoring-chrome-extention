@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "newTumblr Monitoring",
+  "version": "0.2",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [ "https://newtumbl.com/monitor" ],
+      "css": ["mark.css"],
+      "js": [ "mark.js", "defaults.js", "content.js" ]
+    }
+  ],
+  "options_page": "options.html"
+}

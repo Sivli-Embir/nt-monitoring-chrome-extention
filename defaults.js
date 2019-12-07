@@ -10,7 +10,7 @@ const defaultOptions = {
     "incest",
     "jailbait",
     "pedo",
-    "bonner",
+    "boner",
     "rape"
   ],
   orange: [

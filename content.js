@@ -10,12 +10,10 @@ chrome.storage.local.get(defaultOptions, function(settings) {
       tagsMark.markRegExp(new RegExp(regexTagWordPre+word, "i"), {className: 'red'})
     }
     for (let word of settings.pink) {
-      let rWord = new RegExp('^'+word, "i")
       bodyMark.markRegExp(new RegExp(regexBodyWordPre+word, "i"), {className: 'pink'})
       tagsMark.markRegExp(new RegExp(regexTagWordPre+word, "i"), {className: 'pink'})
     }
     for (let word of settings.orange) {
-      let rWord = new RegExp('^'+word, "i")
       bodyMark.markRegExp(new RegExp(regexBodyWordPre+word, "i"), {className: 'orange'})
       tagsMark.markRegExp(new RegExp(regexTagWordPre+word, "i"), {className: 'orange'})
     }

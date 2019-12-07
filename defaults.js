@@ -7,9 +7,6 @@ const defaultOptions = {
   pink: [
     "bestiality",
     "creep(\\s*|-*)shot",
-    "hand(\\s*|-*)job",
-    "rim(\\s*|-*)job",
-    "blow(\\s*|-*)job",
     "incest",
     "jailbait",
     "pedo",
